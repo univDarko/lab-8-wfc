@@ -314,7 +314,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.2509804, g: 0.4745098, b: 0.23529412, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -399,8 +399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f624a4dff940d5a42a7138d4c29886a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 5
-  tiles:
+  size: 8
+  tilePrefabs:
   - {fileID: 2007251809144938870, guid: d9d13897bb4d4584e97bafc2c099cfa1, type: 3}
   - {fileID: 2007251809144938870, guid: 1e6a518051f550f4a93b9c7e054e9a9a, type: 3}
   - {fileID: 2007251809144938870, guid: e61f6eb7aab35c64eacaabc71cb76d82, type: 3}
