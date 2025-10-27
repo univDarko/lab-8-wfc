@@ -7,4 +7,5 @@ public class CustomTile : MonoBehaviour
 {
     public Tile tile;
     public Vector4 directionType;
+    public int entropy = 7;
 }

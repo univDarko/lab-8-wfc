@@ -399,26 +399,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f624a4dff940d5a42a7138d4c29886a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 119871922}
   size: 5
   tiles:
-  - {fileID: 11400000, guid: 0639d47c8b0976c4291536e83974324f, type: 2}
-  - {fileID: 11400000, guid: f376614754102d444861a78af6022b6d, type: 2}
-  - {fileID: 11400000, guid: 64f9ca223ef5c544d8c3bc8053d93645, type: 2}
-  - {fileID: 11400000, guid: a2a261d7e804e7745a296734c22790c2, type: 2}
-  - {fileID: 11400000, guid: 680d8f372edc41948af855204a45f977, type: 2}
-  - {fileID: 11400000, guid: e0a4a5d9366cc5c49aa9d8a95af82595, type: 2}
-  - {fileID: 11400000, guid: 2283dae3cbaede24bbfbcff77ba3b94e, type: 2}
-  - {fileID: 11400000, guid: 575b9718a3270894d8c4b83cd0e61f7f, type: 2}
-  - {fileID: 11400000, guid: b30ef368d423ca149908dc095136d59b, type: 2}
-  - {fileID: 11400000, guid: 06c90f0bdedb7a44d94d63bfa6ce8e1d, type: 2}
-  - {fileID: 11400000, guid: c0f5d2e37da8a4948a173ca6886216e4, type: 2}
-  - {fileID: 11400000, guid: 8ee0d097735f64a4d967df56c8a03f84, type: 2}
-  - {fileID: 11400000, guid: 8f8e29f6e2450504eb31459fd4e9a4d6, type: 2}
-  - {fileID: 11400000, guid: d9fc9134dbda97f4f82bd153ae694ff2, type: 2}
-  - {fileID: 11400000, guid: cf7146b7be087704cbdece460c609218, type: 2}
-  - {fileID: 11400000, guid: 63893d3dc6a28b24db67df114acbce15, type: 2}
-  - {fileID: 11400000, guid: c7c9d5bcc0f09b448abf9d6c1f6f83e5, type: 2}
+  - {fileID: 2007251809144938870, guid: d9d13897bb4d4584e97bafc2c099cfa1, type: 3}
+  - {fileID: 2007251809144938870, guid: 1e6a518051f550f4a93b9c7e054e9a9a, type: 3}
+  - {fileID: 2007251809144938870, guid: e61f6eb7aab35c64eacaabc71cb76d82, type: 3}
+  - {fileID: 2007251809144938870, guid: 7fc3103af9f5cee4d883c1b56e1b50bc, type: 3}
+  - {fileID: 2007251809144938870, guid: 19f5d2c42349dac45bc93e12fd391828, type: 3}
+  - {fileID: 2007251809144938870, guid: 4f479ee548445f04a82d98ac1cd53d6f, type: 3}
+  - {fileID: 2007251809144938870, guid: 6eeed98ea24a0ca418f6059a3ac28e17, type: 3}
 --- !u!4 &840545621
 Transform:
   m_ObjectHideFlags: 0
