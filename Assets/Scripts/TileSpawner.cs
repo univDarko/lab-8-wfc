@@ -24,12 +24,7 @@ public class TileSpawner : MonoBehaviour
     }
 
     private Cell[,] grid;
-    private List<Cell> uncollapsedCells = new List<Cell>();
-
-    void Start()
-    {
-        StartGeneration();
-    }
+    [SerializeField] private List<Cell> uncollapsedCells = new List<Cell>();
 
     void Update()
     {
@@ -38,6 +33,40 @@ public class TileSpawner : MonoBehaviour
             StopAllCoroutines();
             ClearGrid();
             StartGeneration();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // Asegura que la rejilla exista
+            if (grid == null)
+            {
+                InitializeGrid();
+            }
+
+            int randX = Random.Range(0, size);
+            int randY = Random.Range(0, size);
+
+            // Usa la celda REAL de la rejilla, no crees una nueva
+            Cell target = grid[randX, randY];
+
+            // Evita duplicados si ya está colapsada
+            if (!target.isCollapsed)
+            {
+                CollapseCell(target);
+                Propagate(target.position);
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            uncollapsedCells.Clear();
+            ClearGrid();
+            InitializeGrid();
+        }
+
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            StartCoroutine(RunWFC());
         }
     }
 
@@ -145,7 +174,7 @@ public class TileSpawner : MonoBehaviour
 
                 Cell neighborCell = grid[neighborPos.x, neighborPos.y];
 
-                //si el vecino ya está colapsado, no hace nadaxd
+                //si el vecino ya está colapsado, no hace nada
                 if (neighborCell.isCollapsed) continue;
 
                 int initialEntropy = neighborCell.Entropy;
